@@ -17,29 +17,29 @@ console.log(`Status : ${status}`);
 let productPrice = prompt("enter the price");
 let quantity = prompt("enter the quantity");
 let totalPrice = productPrice * quantity;
-let discount = 0;
+let discountBill = 0;
 if (totalPrice > 5000) {
-    discount = totalPrice * 10 / 100;
+    discountBill = totalPrice * 10 / 100;
 }
 else {
     totalPrice;
 }
-let final = totalPrice - discount;
+let final = totalPrice - discountBill;
 console.log("Total : ", totalPrice);
-console.log("Discount: ", discount);
-console.log("Final price: ",final);
+console.log("Discount: ", discountBill);
+console.log("Final price: ", final);
 
 
 //Task 3 – Employee Salary
 let basicSalary = 35000;
 let bonus = 5000;
 let tax = 3000;
-let netSalary = basicSalary+bonus-tax
+let netSalary = basicSalary + bonus - tax
 
-console.log("Basic Salary :" ,basicSalary);
-console.log("Bonus :" ,bonus)
-console.log("Tax :" ,tax)
-console.log("Net Salary :",netSalary);
+console.log("Basic Salary :", basicSalary);
+console.log("Bonus :", bonus)
+console.log("Tax :", tax)
+console.log("Net Salary :", netSalary);
 
 
 //Task 4 –--> Movie Ticket Booking
@@ -59,8 +59,8 @@ let username = prompt("enter the username");
 let password = prompt("enter the password");
 
 let obj = {
-    name : "mani",
-    pass : "09876",
+    name: "mani",
+    pass: "09876",
 }
 
 if (username === obj.name && password === obj.pass) {
@@ -131,12 +131,12 @@ for (let i = 0; i < products.length; i++) {
 
 //Task 10 –--> Function
 
-function calculateArea(length,width){
-    let area = length*width;
-    console.log("Area : ",area);
+function calculateArea(length, width) {
+    let area = length * width;
+    console.log("Area : ", area);
 
 }
-calculateArea(10,20)
+calculateArea(10, 20)
 
 
 //Task 11 –--> Bank Deposit
@@ -162,7 +162,7 @@ function add(a, b) {
     return a + b;
 }
 function calculate(callback, a, b) {
-    console.log("callback: ",callback(a, b));
+    console.log("callback: ", callback(a, b));
     console.log("completed");
 }
 
@@ -258,7 +258,7 @@ cart.unshift("Speakar");
 console.log(cart);
 
 //Task 20 – Product Search
-let products = [
+let product = [
     "Laptop",
     "Mouse",
     "Keyboard",
@@ -267,7 +267,7 @@ let products = [
 ];
 
 
-if (products.includes("Monitor")) {
+if (product.includes("Monitor")) {
     console.log("Product Available");
 } else {
     console.log("Out of Stock");
