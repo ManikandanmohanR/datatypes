@@ -228,10 +228,11 @@ console.log("=======Mini project========");
 
 //Add Employee Details
 let employee = {
-    name: "Manikandan M",
     id: "stk-2026-4016",
-    salary: 20000,
+    name: "Manikandan M",
+    dept: "SDE1",
     experience: 2,
+    salary: 20000,
     skills: ["java", "pyhhon", "aws"]
 };
 let bonusSal = 0;
@@ -239,9 +240,12 @@ let bonusSal = 0;
 //Display Employee Details
 function displayEmployee() {
     console.log("=============Employee Details==============");
-    console.log("Name:", employee.name);
-    console.log("ID:", employee.id);
-    console.log("Skills:", employee.skills);
+    console.log(`ID: ${employee.id}`);
+    console.log(`Name: ${employee.name}`);
+    console.log(`Department: ${employee.dept}`);
+    console.log(`Experience: ${employee.experience} Years`);
+    console.log(`Basic Salary: ₹${employee.salary}`);
+    console.log(`Skills: ${employee.skills}`);
 }
 
 //Calculate Salary
@@ -268,15 +272,16 @@ function checkExperience() {
 }
 
 //update employee
-function addEmployee(name, id, salary, experience, skills) {
-    employee.name = name;
+function addEmployee(id, name, dept, experience, salary, skills) {
     employee.id = id;
-    employee.salary = salary;
+    employee.name = name;
+    employee.dept = dept;
     employee.experience = experience;
+    employee.salary = salary;
     employee.skills = skills;
 }
 
-addEmployee("surya", 102, 40000, 6, ["javaScript", "react", "node.js"]);
+addEmployee(102, "surya", "SDET", 6, 40000, ["javaScript", "react", "node.js"]);
 displayEmployee();
 calculateSalary();
 checkExperience();
