@@ -1,3 +1,5 @@
+// Data Types in JavaScript
+
 // Task 1 ---> Employee Profile
 
 let name = "Manikandan M";

@@ -1,3 +1,5 @@
+//Datastructure es6 in javascript
+
 //Task 1 –--> Student Registration
 let studentName = prompt("enter the name");
 let department = prompt("enter the dpartment");

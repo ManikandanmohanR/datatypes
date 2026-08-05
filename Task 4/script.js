@@ -1,3 +1,5 @@
+// Function in JavaScript
+
 //Task 1 ---> Student Registration Form
 console.log("==========Student Register Form==========");
 
