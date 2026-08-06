@@ -282,28 +282,42 @@ let toStation = "mumbai";
 departureDate.setFullYear(2026);
 departureDate.setMonth(7);
 departureDate.setDate(10);
+departureDate.setHours(10);
+departureDate.setMinutes(30);
+// departureDate.setSeconds(0);
 arrivalDate.setFullYear(2026);
 arrivalDate.setMonth(7);
 arrivalDate.setDate(12);
+arrivalDate.setHours(20);
+arrivalDate.setMinutes(10);
+// arrivalDate.setSeconds(0);
 
 let departureDay = departureDate.getDate();
 let departureMonth = departureDate.getMonth();
 let departureYear = departureDate.getFullYear();
+let departureHours = departureDate.getHours();
+let departureMinutes = departureDate.getMinutes();
 
 let arrivalDay = arrivalDate.getDate();
 let arrivalMonth = arrivalDate.getMonth();
 let arrivalYear = arrivalDate.getFullYear();
+let arrivalHours = arrivalDate.getHours();
+let arrivalMinutes = arrivalDate.getMinutes();
 
 console.log("Train Name : " + trainName);
 console.log("Train Number : " + trainNumber);
 console.log("From Station : " + fromStation);
 console.log("To Station : " + toStation);
 console.log("Departure Date : " + departureDay + "-" + (departureMonth + 1) + "-" + departureYear);
+console.log("Departure Time : " + departureHours + ":" + departureMinutes + " " + "AM");
 console.log("Arrival Date : " + arrivalDay + "-" + (arrivalMonth + 1) + "-" + arrivalYear);
+console.log("Arrival Time : " + arrivalHours + ":" + arrivalMinutes + " " + "PM");
 
 //output: Train Name : Vanthe Barath Express
 //Train Number : 29601
 //From Station : Chennai
 //To Station : mumbai
 //Departure Date : 10-8-2026
+//Departure Time : 10:30 AM
 //Arrival Date : 12-8-2026
+//Arrival Time : 20:10 PM
