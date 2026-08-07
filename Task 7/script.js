@@ -124,11 +124,9 @@ console.log(attendance);
 //Task 10 ---> OTP Generator (Math + String)
 
 
-function generateOTP() {
-    return Math.floor(100000 + Math.random() * 900000);
-}
+let otp = Math.floor(100000 + Math.random() * 900000);
 
-console.log("OTP:", generateOTP());
+console.log("OTP:", otp);
 
 
 //Task 11 ---> 11. Password Strength Checker (String)
@@ -192,7 +190,7 @@ let count = 10;
 
 setInterval(() => {
     for (let i = count; i >= 0; i--) {
-         console.log(i);
+        console.log(i);
     }
 
 }, 1000);
